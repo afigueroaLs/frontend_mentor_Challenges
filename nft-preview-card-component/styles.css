@@ -1,0 +1,40 @@
+body{
+    margin-top: 5%;
+    background-color: hsl(217, 54%, 11%);
+}
+.card {
+    background-color: hsl(216, 50%, 16%);
+    border: none !important;
+    border-radius: 20px;
+}
+#img-nft{
+    padding: 5%;
+    border-radius: 25px;
+}
+p { 
+    font-size: 18px;
+    color: #94a9cb;
+    text-align: justify;
+}
+hr{
+    color: #94a9cb; 
+}
+
+#avatar{
+    width: 15%;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+#card-title, #avatar-name{
+    color: white;
+}
+#card-title:hover, #avatar-name:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    
+}
+#eth{
+    color: hsl(178, 100%, 50%);
+}
+
