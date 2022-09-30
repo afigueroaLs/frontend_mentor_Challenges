@@ -5,12 +5,51 @@ body{
 .card {
     background-color: hsl(216, 50%, 16%);
     border: none !important;
-    border-radius: 20px;
+    border-radius: 15px;
+}
+/* image and icon */
+.cotainer-img{
+    position: relative;
+  width: 100%;
 }
 #img-nft{
-    padding: 5%;
-    border-radius: 25px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
 }
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: red;
+  }
+  /* When you mouse over the container, fade in the overlay icon*/
+.container:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* The icon inside the overlay is positioned in the middle vertically and horizontally */
+  .icon-svg {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    left:100%;
+    transform: translate(-150%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* When you move the mouse over the icon, change color */
+  .icon-svg:hover {
+    color: #eee;
+  }
+/* text styles */
 p { 
     font-size: 18px;
     color: #94a9cb;
@@ -20,6 +59,7 @@ hr{
     color: #94a9cb; 
 }
 
+/* avatar style */
 #avatar{
     width: 15%;
     margin-right: 10px;
@@ -34,7 +74,19 @@ hr{
     cursor: pointer;
     
 }
+.align-items-center{
+    margin: auto;
+    width: 25%;
+}
 #eth{
     color: hsl(178, 100%, 50%);
 }
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
